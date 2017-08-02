@@ -1,5 +1,7 @@
 require 'bootstrap-sass'
 require 'compass/import-once/activate'
+relative_assets = true
+fonts_dir = "/fonts"
 # Require any additional compass plugins here.
 
 
