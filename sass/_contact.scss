@@ -9,19 +9,19 @@
   color: $color;
 }
 
-//variables 
+//variables
+$Selima : "selima";
+$Droid: "Droid Serif", serif;
 $Muli: "Muli", sans-serif;
 $blue : #43D8E5;
 $white: #fff;
 $black: #323333;
 
-#Tcheny {
-  font-family: "Droid Serif", serif;
-}
+
 .navbar {
    padding: 20px 0;
   img {
-    margin-left: 60px;
+    margin-left: 50px;
     @include wh(70px, 70px);
   }
   li a{
@@ -30,6 +30,16 @@ $black: #323333;
     @include fonts($Muli, 17px, $blue);
   }
 }
-.titlecontact {
-    @include fonts($Muli, 30px, $black);
+#Tcheny {
+  font-family: $Droid;
+  .titlecontact {
+    padding-bottom: 50px;
+      @include fonts($Selima, 50px, $black);
+  }
+  // .formulaire {
+  //   margin-top: 20px;
+  // }
+  .formline {
+    margin-bottom: 10px;
+  }
 }
