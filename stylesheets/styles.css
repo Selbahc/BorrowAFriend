@@ -34,7 +34,7 @@
 }
 /* line 23, ../sass/_contact.scss */
 .navbar img {
-  margin-left: 60px;
+  margin-left: 50px;
   width: 70px;
   height: 70px;
 }
@@ -48,10 +48,23 @@
 }
 
 /* line 33, ../sass/_contact.scss */
-.titlecontact {
-  font-family: "Muli", sans-serif;
-  font-size: 30px;
+#Tcheny {
+  font-family: "Droid Serif", serif;
+}
+/* line 35, ../sass/_contact.scss */
+#Tcheny .titlecontact {
+  padding-bottom: 50px;
+  font-family: "selima";
+  font-size: 50px;
   color: #323333;
+}
+/* line 39, ../sass/_contact.scss */
+#Tcheny .formulaire {
+  margin-top: 20px;
+}
+/* line 43, ../sass/_contact.scss */
+#Tcheny .formline {
+  margin-bottom: 10px;
 }
 
 @font-face {
