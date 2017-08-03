@@ -2,14 +2,21 @@
 /* line 5, ../sass/_presentation.scss */
 .round {
   border-radius: 50%;
+  width: 100%;
+  margin: 0 auto;
 }
 
-/* line 10, ../sass/_presentation.scss */
+/* line 12, ../sass/_presentation.scss */
+.presentationImages {
+  width: 40%;
+}
+
+/* line 15, ../sass/_presentation.scss */
 #presentation {
   font-family: 'Muli';
 }
 
-/* line 13, ../sass/_presentation.scss */
+/* line 18, ../sass/_presentation.scss */
 .question {
   font-family: 'Muli';
   font-size: 1em;
