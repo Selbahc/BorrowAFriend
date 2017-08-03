@@ -1,4 +1,35 @@
 @charset "UTF-8";
+/* line 18, ../sass/_contact.scss */
+#Tcheny {
+  font-family: "Droid Serif", serif;
+}
+
+/* line 21, ../sass/_contact.scss */
+.navbar {
+  padding: 20px 0;
+}
+/* line 23, ../sass/_contact.scss */
+.navbar img {
+  margin-left: 60px;
+  width: 70px;
+  height: 70px;
+}
+/* line 27, ../sass/_contact.scss */
+.navbar li a {
+  margin-top: 10px;
+  margin-right: 40px;
+  font-family: "Muli", sans-serif;
+  font-size: 17px;
+  color: #43D8E5;
+}
+
+/* line 33, ../sass/_contact.scss */
+.titlecontact {
+  font-family: "Muli", sans-serif;
+  font-size: 30px;
+  color: #323333;
+}
+
 @font-face {
   font-family: "selima";
   src: url(../fonts/selima/selima_.otf);
@@ -13,24 +44,6 @@
   src: url(../fonts/Muli/Muli-Bold.ttf);
   font-weight: bold;
 }
-/* line 31, ../sass/_bootstrap-custom.scss */
-.navbar {
-  background-color: black;
-  padding: 20px 0;
-}
-/* line 34, ../sass/_bootstrap-custom.scss */
-.navbar img {
-  margin-left: 40px;
-  width: 50px;
-  height: 50px;
-}
-/* line 38, ../sass/_bootstrap-custom.scss */
-.navbar li a {
-  color: red;
-  margin-right: 40px;
-  font-family: "Muli",sans-serif;
-}
-
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -5658,7 +5671,7 @@ tbody.collapse.in {
 @media (min-width: 768px) {
   /* line 11, ../../../../.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar {
-    border-radius: 4px;
+    border-radius: 0;
   }
 }
 
@@ -6015,8 +6028,8 @@ tbody.collapse.in {
 /* line 332, ../../../../.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
   margin-bottom: 0;
-  border-top-right-radius: 4px;
-  border-top-left-radius: 4px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -6069,35 +6082,35 @@ tbody.collapse.in {
 }
 /* line 397, ../../../../.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default {
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.6);
   border-color: transparent;
 }
 /* line 401, ../../../../.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-brand {
-  color: #777;
+  color: #43D8E5;
 }
 /* line 403, ../../../../.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-  color: #5e5e5e;
+  color: #1ec8d7;
   background-color: transparent;
 }
 /* line 410, ../../../../.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-text {
-  color: #777;
+  color: #fff;
 }
 /* line 415, ../../../../.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > li > a {
-  color: #777;
+  color: #43D8E5;
 }
 /* line 418, ../../../../.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color: #333;
+  color: #189faa;
   background-color: transparent;
 }
 /* line 425, ../../../../.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   color: #555;
-  background-color: transparent;
+  background-color: rgba(238, 238, 238, 0.6);
 }
 /* line 433, ../../../../.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus {
@@ -6123,23 +6136,23 @@ tbody.collapse.in {
 }
 /* line 462, ../../../../.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-  background-color: transparent;
+  background-color: rgba(238, 238, 238, 0.6);
   color: #555;
 }
 @media (max-width: 767px) {
   /* line 473, ../../../../.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #777;
+    color: #43D8E5;
   }
   /* line 475, ../../../../.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #333;
+    color: #189faa;
     background-color: transparent;
   }
   /* line 482, ../../../../.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #555;
-    background-color: transparent;
+    background-color: rgba(238, 238, 238, 0.6);
   }
   /* line 490, ../../../../.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
@@ -6149,19 +6162,19 @@ tbody.collapse.in {
 }
 /* line 506, ../../../../.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-link {
-  color: #777;
+  color: #43D8E5;
 }
 /* line 508, ../../../../.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-link:hover {
-  color: #333;
+  color: #189faa;
 }
 /* line 513, ../../../../.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .btn-link {
-  color: #777;
+  color: #43D8E5;
 }
 /* line 515, ../../../../.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .btn-link:hover, .navbar-default .btn-link:focus {
-  color: #333;
+  color: #189faa;
 }
 /* line 521, ../../../../.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .btn-link[disabled]:hover, .navbar-default .btn-link[disabled]:focus, fieldset[disabled] .navbar-default .btn-link:hover, fieldset[disabled] .navbar-default .btn-link:focus {
