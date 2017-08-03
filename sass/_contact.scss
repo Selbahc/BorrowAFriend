@@ -16,6 +16,7 @@ $Muli: "Muli", sans-serif;
 $blue : #43D8E5;
 $white: #fff;
 $black: #323333;
+$red: #C52222;
 
 
 .navbar {
@@ -31,15 +32,26 @@ $black: #323333;
   }
 }
 #Tcheny {
-  font-family: $Droid;
+  @include fonts($Droid, 15px, $black);
   .titlecontact {
     padding-bottom: 50px;
       @include fonts($Selima, 50px, $black);
   }
-  // .formulaire {
-  //   margin-top: 20px;
-  // }
-  .formline {
-    margin-bottom: 10px;
+  .formulaire {
+    text-align: center;
+      .formline {
+    margin-bottom: 11px;
+    text-align: left;
   }
+  .btn-custom {
+    background-color: $blue;
+    color: $white;
+  }
+  }
+
+      span {
+
+  color: $red;
 }
+}
+
