@@ -17,41 +17,116 @@ $blue : #43D8E5;
 $white: #fff;
 $black: #323333;
 $red: #C52222;
+$grey: #EAEAEA;
 
 
 .navbar {
-   padding: 20px 0;
+  padding: 20px 0;
+  text-transform: uppercase;
   img {
     margin-left: 50px;
     @include wh(70px, 70px);
   }
   li a{
     margin-top: 10px;
-    margin-right: 40px;
-    @include fonts($Muli, 17px, $blue);
+    margin-right: 20px;
+    @include fonts($Muli, 16px, $blue);
   }
 }
 #Tcheny {
   @include fonts($Droid, 15px, $black);
   .titlecontact {
-    padding-bottom: 50px;
-      @include fonts($Selima, 50px, $black);
+    padding-bottom: 20px;
+    @include fonts($Selima, 50px, $black);
+  }
+  .separateur {
+    @include wh(90px,0);
+    border: 2px solid $blue;
+  }
+  .contact {
+    padding: 20px 0px 60px 0px;
   }
   .formulaire {
     text-align: center;
-      .formline {
-    margin-bottom: 11px;
-    text-align: left;
+    .formline {
+      margin-bottom: 11px;
+      text-align: left;
+    }
+    .btn-custom {
+      background-color: $blue;
+      color: $white;
+      &:hover {
+        background-color: darken($blue,30%);
+      }
+    }
   }
-  .btn-custom {
-    background-color: $blue;
-    color: $white;
+  span {
+    color: $red;
   }
-  }
+  footer {
+    @include wh(auto, 150px);
+    background-color: $grey;
 
-      span {
-
-  color: $red;
+    li {
+      display: inline;
+      padding-right: 30px;
+      a {
+        font-size: 17px;
+        text-decoration: none;
+        color: $black;
+        &:hover {
+          text-shadow: 2px 2px 5px darken($grey,30%);
+        }
+      }
+      .fa {
+        font-size: 30px;
+      }
+    }
+    .about:hover {
+      color: #3b5998;
+    }
+    .product:hover {
+      color: #0b96b5;
+    }
+    .contact:hover {
+      color: #fff500;
+    }
+    p {
+      margin: 0;
+    }
+    .fa {
+      color: $black;
+      transition: 0.8s;
+      transition-duration: 3.3s;
+    }
+    .fa-facebook:hover {
+      color: #3b5998;
+      transform: rotateY(360deg);
+      transition: 0.5s;
+      transition-duration: 3s;
+    }
+    .fa-twitter:hover {
+      color: #0b96b5;
+      transform: rotateY(360deg);
+      transition: 0.5s;
+      transition-duration: 3s;
+    }
+    .fa-instagram:hover {
+      color: #fff500;
+      transform: rotateY(360deg);
+      transition: 0.5s;
+      transition-duration: 3s;
+    }
+  }
 }
-}
 
+@media (max-width: 991px) { //petit ecran
+  footer {
+    padding: 5px 0;
+  }
+}
+@media (min-width: 992px) { // grand ecran
+  footer {
+    padding: 60px 0;
+  }
+}
