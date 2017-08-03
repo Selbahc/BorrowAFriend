@@ -1,0 +1,17 @@
+@mixin roundImg(){
+  border-radius: 50%;
+}
+
+.round {
+  @include roundImg;
+
+}
+
+#presentation {
+  font-family: 'Muli';
+}
+.question {
+  font-family: 'Muli';
+  font-size: 1em;
+  text-transform: uppercase;
+}

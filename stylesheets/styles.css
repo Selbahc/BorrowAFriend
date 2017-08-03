@@ -9,7 +9,7 @@
 }
 /* line 12, ../sass/_home.scss */
 #header h2 {
-  font-size: 24px;
+  font-size: 22px;
   color: #fff;
 }
 /* line 17, ../sass/_home.scss */
@@ -29,15 +29,25 @@
   font-family: "Muli", sans-serif;
 }
 
-/* line 36, ../sass/_home.scss */
-#three-boxes a {
-  font-size: 18px;
+/* line 34, ../sass/_home.scss */
+.open {
+  transform: translateY(200%);
+}
+
+/* line 40, ../sass/_home.scss */
+#three-boxes {
+  display: flex;
+  margin: 0;
+}
+/* line 43, ../sass/_home.scss */
+#three-boxes p {
+  font-size: 14px;
   text-transform: uppercase;
   text-align: center;
   color: #fff;
   font-family: "selima";
 }
-/* line 45, ../sass/_home.scss */
+/* line 52, ../sass/_home.scss */
 #three-boxes #presentation-box {
   background-image: linear-gradient(black 0%, rgba(221, 221, 214, 0.35) 0%), url("../medias/images/page-home/presentation.jpg");
   background-size: cover;
@@ -45,8 +55,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11);
+  overflow: hidden;
+  position: relative;
 }
-/* line 54, ../sass/_home.scss */
+/* line 64, ../sass/_home.scss */
 #three-boxes #produits-box {
   background-image: linear-gradient(black 0%, rgba(221, 221, 214, 0.35) 0%), url("../medias/images/page-home/produits.jpg");
   background-size: cover;
@@ -54,8 +67,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11);
+  overflow: hidden;
+  position: relative;
 }
-/* line 63, ../sass/_home.scss */
+/* line 76, ../sass/_home.scss */
 #three-boxes #contact-box {
   background-image: linear-gradient(black 0%, rgba(221, 221, 214, 0.35) 0%), url("../medias/images/page-home/contact.jpg");
   background-size: cover;
@@ -63,61 +79,96 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11);
+  overflow: hidden;
+  position: relative;
 }
 
-/* line 74, ../sass/_home.scss */
+/* line 88, ../sass/_home.scss */
+.btn-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 99, ../sass/_home.scss */
+.btn-container .btn {
+  margin-top: 60%;
+  transition: transform 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11);
+  font-family: "Muli", sans-serif;
+}
+
+/* line 109, ../sass/_home.scss */
 #presentation-row {
   font-family: "Muli", sans-serif;
 }
-/* line 76, ../sass/_home.scss */
+/* line 111, ../sass/_home.scss */
 #presentation-row h2 {
   font-size: 20px;
   font-family: "Droid Serif", serif;
 }
 
-/* line 83, ../sass/_home.scss */
+/* line 118, ../sass/_home.scss */
 #last-tweets {
   background-color: rgba(24, 187, 187, 0.54);
   padding: 20px 0;
   font-family: "Muli", sans-serif;
 }
-/* line 87, ../sass/_home.scss */
+/* line 122, ../sass/_home.scss */
 #last-tweets .fa-twitter {
   color: #1da1f2;
 }
-/* line 90, ../sass/_home.scss */
+/* line 125, ../sass/_home.scss */
 #last-tweets p {
   font-size: 16px;
   font-style: italic;
 }
 
-/* line 99, ../sass/_home.scss */
+/* line 134, ../sass/_home.scss */
 #last-advices h3 {
   font-size: 20px;
   font-family: "Droid Serif", serif;
 }
-/* line 103, ../sass/_home.scss */
+/* line 138, ../sass/_home.scss */
 #last-advices p {
   font-size: 14px;
   font-family: "Muli", sans-serif;
 }
 
-/* line 18, ../sass/_contact.scss */
-#Tcheny {
-  font-family: "Droid Serif", serif;
+/* line 5, ../sass/_presentation.scss */
+.round {
+  border-radius: 50%;
 }
 
-/* line 21, ../sass/_contact.scss */
+/* line 10, ../sass/_presentation.scss */
+#presentation {
+  font-family: 'Muli';
+}
+
+/* line 13, ../sass/_presentation.scss */
+.question {
+  font-family: 'Muli';
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+/* line 22, ../sass/_contact.scss */
 .navbar {
   padding: 20px 0;
 }
-/* line 23, ../sass/_contact.scss */
+/* line 24, ../sass/_contact.scss */
 .navbar img {
-  margin-left: 60px;
+  margin-left: 50px;
   width: 70px;
   height: 70px;
 }
-/* line 27, ../sass/_contact.scss */
+/* line 28, ../sass/_contact.scss */
 .navbar li a {
   margin-top: 10px;
   margin-right: 40px;
@@ -126,11 +177,36 @@
   color: #43D8E5;
 }
 
-/* line 33, ../sass/_contact.scss */
-.titlecontact {
-  font-family: "Muli", sans-serif;
-  font-size: 30px;
+/* line 34, ../sass/_contact.scss */
+#Tcheny {
+  font-family: "Droid Serif", serif;
+  font-size: 15px;
   color: #323333;
+}
+/* line 36, ../sass/_contact.scss */
+#Tcheny .titlecontact {
+  padding-bottom: 50px;
+  font-family: "selima";
+  font-size: 50px;
+  color: #323333;
+}
+/* line 40, ../sass/_contact.scss */
+#Tcheny .formulaire {
+  text-align: center;
+}
+/* line 42, ../sass/_contact.scss */
+#Tcheny .formulaire .formline {
+  margin-bottom: 11px;
+  text-align: left;
+}
+/* line 46, ../sass/_contact.scss */
+#Tcheny .formulaire .btn-custom {
+  background-color: #43D8E5;
+  color: #fff;
+}
+/* line 52, ../sass/_contact.scss */
+#Tcheny span {
+  color: #C52222;
 }
 
 @font-face {

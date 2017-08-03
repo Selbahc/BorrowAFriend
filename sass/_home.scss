@@ -10,7 +10,7 @@ $blueBorrow: #79C4CF;
   padding-bottom: 30px;
   font-family: "Droid Serif", serif;
   & h2 {
-    font-size: 24px;
+    font-size: 22px;
     color: #fff;
   }
 
@@ -31,10 +31,17 @@ $blueBorrow: #79C4CF;
 
   }
 }
+.open {
+  transform: translateY(200%);
+}
+
+// Three Boxes
 
 #three-boxes {
-  & a {
-    font-size: 18px;
+  display: flex;
+  margin: 0;
+  & p {
+    font-size: 14px;
     text-transform: uppercase;
     text-align: center;
     color: #fff;
@@ -49,6 +56,9 @@ $blueBorrow: #79C4CF;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: flex 0.7s cubic-bezier(0.61,-0.19,0.7,-0.11);
+    overflow: hidden;
+    position: relative;
   }
 
   & #produits-box {
@@ -58,6 +68,9 @@ $blueBorrow: #79C4CF;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: flex 0.7s cubic-bezier(0.61,-0.19,0.7,-0.11);
+    overflow: hidden;
+    position: relative;
   }
 
   & #contact-box {
@@ -67,8 +80,30 @@ $blueBorrow: #79C4CF;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: flex 0.7s cubic-bezier(0.61,-0.19,0.7,-0.11);
+    overflow: hidden;
+    position: relative;
   }
 }
+.btn-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .btn {
+    margin-top: 60%;
+    transition: transform 0.7s cubic-bezier(0.61,-0.19,0.7,-0.11);
+    font-family: "Muli", sans-serif;
+
+  }
+}
+
 // Presentation de l'entreprise
 
 #presentation-row {
@@ -104,4 +139,8 @@ $blueBorrow: #79C4CF;
     font-size: 14px;
     font-family: "Muli", sans-serif;
   }
+}
+
+#advice-slider {
+
 }
