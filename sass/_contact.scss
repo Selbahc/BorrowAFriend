@@ -3,9 +3,8 @@
   width: $width;
   height: $height;
 }
-@mixin fonts($font, $size, $color) {
+@mixin fonts($font, $color) {
   font-family: $font;
-  font-size: $size;
   color: $color;
 }
 
@@ -30,18 +29,23 @@ $grey: #EAEAEA;
   li a{
     margin-top: 10px;
     margin-right: 20px;
-    @include fonts($Muli, 16px, $blue);
+    @include fonts($Muli, $blue);
+  &:hover {
+    border-top: 1px solid $black;
+    border-bottom: 1px solid $black;
+    transition: 0.5s;
+    transition-duration: 3s;
+  }
+  }
+  .black {
+    color: $black;
   }
 }
 #Tcheny {
-  @include fonts($Droid, 15px, $black);
+  @include fonts($Droid, $black);
+  //  15px,
   .titlecontact {
-    padding-bottom: 20px;
-    @include fonts($Selima, 50px, $black);
-  }
-  .separateur {
-    @include wh(90px,0);
-    border: 2px solid $blue;
+    @include fonts($Selima, $black);
   }
   .contact {
     padding: 20px 0px 60px 0px;
@@ -49,11 +53,15 @@ $grey: #EAEAEA;
   .form-group {
     margin-bottom: 11px;
     text-align: left;
+    outline: hidden;
   }
   .btn-custom {
     margin-bottom: 20px;
     background-color: $blue;
     color: $white;
+    transition: 0.5s;
+    transition-duration: 2s;
+
     &:hover {
       background-color: darken($blue,30%);
     }
@@ -76,7 +84,6 @@ $grey: #EAEAEA;
       display: inline;
       padding-right: 30px;
       a {
-        font-size: 17px;
         text-decoration: none;
         color: $black;
         &:hover {
@@ -126,12 +133,60 @@ $grey: #EAEAEA;
 }
 
 @media (max-width: 991px) { //petit ecran
-  footer {
-    padding: 5px 0;
+  .navbar {
+    text-align: center !important;
+    img {
+      @include wh(50px, 50px);
+    }
+    li a {
+      font-size: 10px;
+    }
   }
+  #Tcheny {
+    font-size: 12px;
+  }
+    .btn-custom {
+      @include wh(120px, 30px);
+      font-size: 5px;
+    }
+  .titlecontact {
+    padding-bottom: 10px;
+    font-size: 30px;
+  }
+  .separateur {
+    @include wh(50px,0);
+    border: 1px solid $blue;
+
+  }
+  footer {
+    padding: 30px 0;
+    a {
+      font-size: 12px;
+    }
+  }
+
 }
 @media (min-width: 992px) { // grand ecran
+  #Tcheny {
+    font-size: 16px;
+  }
+  .btn-custom {
+    @include wh(150px, 50px);
+    font-size: 20px !important;
+  }
+  .titlecontact {
+    padding-bottom: 20px;
+    font-size: 50px;
+  }
+  .separateur {
+    @include wh(90px,0);
+    border: 2px solid $blue;
+  }
   footer {
     padding: 60px 0;
+    a {
+      font-size: 17px;
+    }
   }
+
 }
