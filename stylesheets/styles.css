@@ -4,17 +4,63 @@
   border-radius: 50%;
 }
 
-/* line 9, ../sass/_presentation.scss */
+/* line 10, ../sass/_presentation.scss */
 #presentation {
   font-family: 'Muli';
 }
 
 /* line 13, ../sass/_presentation.scss */
-.question1 {
-  width: 100%;
-  height: 200px;
+.question {
+  font-family: 'Muli';
+  font-size: 1em;
+  text-transform: uppercase;
 }
 
+/* line 18, ../sass/_contact.scss */
+#Tcheny {
+  font-family: "Droid Serif", serif;
+}
+
+/* line 21, ../sass/_contact.scss */
+.navbar {
+  padding: 20px 0;
+}
+/* line 23, ../sass/_contact.scss */
+.navbar img {
+  margin-left: 60px;
+  width: 70px;
+  height: 70px;
+}
+/* line 27, ../sass/_contact.scss */
+.navbar li a {
+  margin-top: 10px;
+  margin-right: 40px;
+  font-family: "Muli", sans-serif;
+  font-size: 17px;
+  color: #43D8E5;
+}
+
+/* line 33, ../sass/_contact.scss */
+.titlecontact {
+  font-family: "Muli", sans-serif;
+  font-size: 30px;
+  color: #323333;
+}
+
+@font-face {
+  font-family: "selima";
+  src: url(../fonts/selima/selima_.otf);
+}
+@font-face {
+  font-family: "Droid Serif", serif;
+  src: url(../fonts/Droid_Serif/DroidSerif.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Muli", sans-serif;
+  src: url(../fonts/Muli/Muli-Bold.ttf);
+  font-weight: bold;
+}
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -5642,7 +5688,7 @@ tbody.collapse.in {
 @media (min-width: 768px) {
   /* line 11, ../../../../../var/lib/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar {
-    border-radius: 4px;
+    border-radius: 0;
   }
 }
 
@@ -5999,8 +6045,8 @@ tbody.collapse.in {
 /* line 332, ../../../../../var/lib/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
   margin-bottom: 0;
-  border-top-right-radius: 4px;
-  border-top-left-radius: 4px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -6053,35 +6099,35 @@ tbody.collapse.in {
 }
 /* line 397, ../../../../../var/lib/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default {
-  background-color: #f8f8f8;
-  border-color: #e7e7e7;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-color: transparent;
 }
 /* line 401, ../../../../../var/lib/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-brand {
-  color: #777;
+  color: #43D8E5;
 }
 /* line 403, ../../../../../var/lib/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-  color: #5e5e5e;
+  color: #1ec8d7;
   background-color: transparent;
 }
 /* line 410, ../../../../../var/lib/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-text {
-  color: #777;
+  color: #fff;
 }
 /* line 415, ../../../../../var/lib/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > li > a {
-  color: #777;
+  color: #43D8E5;
 }
 /* line 418, ../../../../../var/lib/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color: #333;
+  color: #189faa;
   background-color: transparent;
 }
 /* line 425, ../../../../../var/lib/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   color: #555;
-  background-color: #e7e7e7;
+  background-color: rgba(238, 238, 238, 0.6);
 }
 /* line 433, ../../../../../var/lib/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus {
@@ -6103,27 +6149,27 @@ tbody.collapse.in {
 /* line 453, ../../../../../var/lib/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: #e7e7e7;
+  border-color: transparent;
 }
 /* line 462, ../../../../../var/lib/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-  background-color: #e7e7e7;
+  background-color: rgba(238, 238, 238, 0.6);
   color: #555;
 }
 @media (max-width: 767px) {
   /* line 473, ../../../../../var/lib/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #777;
+    color: #43D8E5;
   }
   /* line 475, ../../../../../var/lib/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #333;
+    color: #189faa;
     background-color: transparent;
   }
   /* line 482, ../../../../../var/lib/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #555;
-    background-color: #e7e7e7;
+    background-color: rgba(238, 238, 238, 0.6);
   }
   /* line 490, ../../../../../var/lib/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
@@ -6133,19 +6179,19 @@ tbody.collapse.in {
 }
 /* line 506, ../../../../../var/lib/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-link {
-  color: #777;
+  color: #43D8E5;
 }
 /* line 508, ../../../../../var/lib/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-link:hover {
-  color: #333;
+  color: #189faa;
 }
 /* line 513, ../../../../../var/lib/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .btn-link {
-  color: #777;
+  color: #43D8E5;
 }
 /* line 515, ../../../../../var/lib/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .btn-link:hover, .navbar-default .btn-link:focus {
-  color: #333;
+  color: #189faa;
 }
 /* line 521, ../../../../../var/lib/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .btn-link[disabled]:hover, .navbar-default .btn-link[disabled]:focus, fieldset[disabled] .navbar-default .btn-link:hover, fieldset[disabled] .navbar-default .btn-link:focus {

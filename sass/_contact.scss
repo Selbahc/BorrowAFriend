@@ -1,0 +1,35 @@
+//mixins
+@mixin wh($width, $height) {
+  width: $width;
+  height: $height;
+}
+@mixin fonts($font, $size, $color) {
+  font-family: $font;
+  font-size: $size;
+  color: $color;
+}
+
+//variables 
+$Muli: "Muli", sans-serif;
+$blue : #43D8E5;
+$white: #fff;
+$black: #323333;
+
+#Tcheny {
+  font-family: "Droid Serif", serif;
+}
+.navbar {
+   padding: 20px 0;
+  img {
+    margin-left: 60px;
+    @include wh(70px, 70px);
+  }
+  li a{
+    margin-top: 10px;
+    margin-right: 40px;
+    @include fonts($Muli, 17px, $blue);
+  }
+}
+.titlecontact {
+    @include fonts($Muli, 30px, $black);
+}
