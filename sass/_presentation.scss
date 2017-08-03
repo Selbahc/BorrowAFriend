@@ -1,22 +1,83 @@
 @mixin roundImg(){
   border-radius: 50%;
 }
+$Muli: "Muli", sans-serif;
+$Selima : "selima";
 
+.presentationTitle {
+  font-family: $Selima;
+  font-size: 3em;
+}
 .round {
   @include roundImg;
   width: 100%;
   margin: 0 auto;
-
+  -webkit-filter: sepia(70%); /* Safari 6.0 - 9.0 */
+    filter: sepia(70%);
 }
-
 .presentationImages {
   width: 40%;
 }
-#presentation {
-  font-family: 'Muli';
+#presentation, .presName {
+  font-family: $Muli;
 }
 .question {
-  font-family: 'Muli';
+  font-family: $Muli;
   font-size: 1em;
   text-transform: uppercase;
+  border: 1px solid #43D8E5;
+  border-radius: 5px;
+  outline: none;
+  padding: 10px;
+  font-weight: bold;
+
+  .answer {
+    padding-bottom: 20px;
+  }
 }
+
+.authorImages {
+  padding-top: 20px;
+}
+#aboutUs {
+  display: none;
+}
+
+
+@media (min-width: 992px) {
+  .presentationTitle {
+    font-size: 5em;
+  }
+  #presentation {
+    padding: 40px;
+  }
+  #aboutUs {
+  display: block;
+
+}
+.aboutAndImg{
+  padding: 20px 60px;
+}
+.smallScreen {
+  display: none;
+}
+#imageBigScreen{
+  display: none;
+
+}
+.separateur {
+  width: 90px;
+  height: 0;
+  border: 2px solid #43D8E5;
+}
+.presImg {
+  margin: 20px;
+}
+.imageAbout {
+  top: 20px;
+}
+.titreAbout {
+  text-transform: uppercase;
+}
+
+ }

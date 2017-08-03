@@ -13,54 +13,122 @@
 <body>
 
   <nav class="navbar navbar-default">
-    <div class="container-fluid">
+    <div class="container">
       <div class="navbar-header">
-        <img src="medias/images/logo-text-transp.png" alt="logo">
-      </div>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    <img class="img-responsive" src="medias/images/logo-text-transp.png" alt="logo">
+  </div>
+  <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">Home</a></li>
-        <li><a href="#">Présentation</a></li>
+        <li><a href="#">A Propos</a></li>
         <li><a href="#">Produits</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
-    </div>
-  </nav>
+  </div>
+</nav>
 
 
   <!--PRESENTATION START -->
 
   <div class="container-fluid text-center">
-
+    <h3 class="presentationTitle">Few words about us</h3>
       <p id="presentation">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </div>
 
-     <div class="container-fluid text-center">
+<hr class="separateur">
+<!--ONLY FOR A BIG SCREEN-->
+
+<div class="container-fluid" id="aboutUs">
+  <div class="row text-center">
+    <h2>About</h2>
+      <h3>Lorem ipsum dolar sit amet consectetur.</h3>
+  </div>
+
+<div class="row aboutAndImg">
+    <div class="col-md-5 imageAbout">
+      <h4 class="titreAbout">pourquoi nous</h4>
+        <h4>Our Humble Beginnings</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam,
+             recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+          </p>
+  </div>
+
+  <div class="col-md-2">
+    <img src="./medias/images/page_presentation/Stan.jpg" class="img-responsive round presImg">
+  </div>
+</div>
+
+<div class="row aboutAndImg">
+  <div class="col-md-offset-5 col-md-2">
+    <img src="./medias/images/page_presentation/Tcheny.jpg" class="img-responsive round presImg">
+  </div>
+
+  <div class="col-md-5 imageAbout">
+    <h4 class="titreAbout">d'ou vient l'idee</h4>
+      <h4>An Agency is Born</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam,
+           recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+        </p>
+  </div>
+</div>
+
+<div class="row aboutAndImg">
+  <div class="col-md-5 imageAbout">
+    <h4 class="titreAbout">qui sommes nous?</h4>
+     <h4>This is us!</h4>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam,
+          recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+       </p>
+  </div>
+
+<div class="col-md-2">
+  <img src="./medias/images/page_presentation/Faissal.jpg"  class="img-responsive round presImg">
+</div>
+</div>
+
+</div>
+<!--END BIG SCREEN-->
+
+<!--SMALL SCREEN-->
+     <div class="container-fluid text-center" id="imageBigScreen">
        <div class="imgHappy">
-        <img class="question1 img-responsive" src="./medias/images/page_presentation/question1.jpg">
+        <img class="question1 img-responsive" src="./medias/images/page_presentation/question1.jpg" alt="friends" title="friendsFun">
        </div>
     </div>
 </br>
 
- <div class="container-fluid text-center">
+ <div class="container-fluid text-center smallScreen">
 
      <div id="accordion">
 
-       <p class="question">Qui sommes nous?</p>
+       <p class="question">Pourquoi nous?  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></p>
          <div class="firstAnswer">
-           <p class="answer"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+           <p class="answer"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
       </div>
 
-      <p class="question">D'ou vient l'idée?</p>
+      <p class="question">D'ou vient l'idée? <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></p>
         <div class="secondAnswer">
-          <p class="answer"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          <p class="answer"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
          </p>
       </div>
 
-      <p class="question">Porquoi nous?</p>
+      <p class="question">Qui sommes nous? <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></p>
+
        <div class="thirdAnswer">
         <p class="answer"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -69,33 +137,35 @@
     </div>
   </div>
 
-    <div class="container-fluid text-center">
+<hr class="separateur">
 
-      <div class="col-xs-6"  align="center">
+    <div class="container-fluid text-center authorImages">
+
+      <div class="col-xs-6 col-md-3"  align="center">
         <div id="tchenyPhoto" class="presentationImages">
           <img class="round " src="./medias/images/page_presentation/Tcheny.jpg">
         </div>
-        <h5>Tcheny</h5>
+        <h5 class="presName">Tcheny</h5>
       </div>
 
-     <div class="col-xs-6" align="center">
+     <div class="col-xs-6 col-md-3" align="center">
         <div id="stanPhoto" class="presentationImages">
           <img class="round " src="./medias/images/page_presentation/Stan.jpg">
       </div>
-      <h5>Stanislas</h5>
+      <h5 class="presName">Stanislas</h5>
       </div>
-      <div class="col-xs-6" align="center">
+      <div class="col-xs-6 col-md-3" align="center">
         <div id="jovanaPhoto" class="presentationImages">
           <img class="round " src="./medias/images/page_presentation/Jovana.jpg">
         </div>
-        <h5>Jovana</h5>
+        <h5 class="presName">Jovana</h5>
       </div>
 
-     <div class="col-xs-6" align="center">
+     <div class="col-xs-6 col-md-3" align="center">
         <div id="faissalPhoto" class="presentationImages">
           <img class="round " src="./medias/images/page_presentation/Faissal.jpg">
       </div>
-      <h5>Faissal</h5>
+      <h5 class="presName">Faïssal</h5>
       </div>
 
    </div>

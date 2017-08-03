@@ -1,33 +1,109 @@
 @charset "UTF-8";
-/* line 5, ../sass/_presentation.scss */
+/* line 7, ../sass/_presentation.scss */
+.presentationTitle {
+  font-family: "selima";
+  font-size: 3em;
+}
+
+/* line 11, ../sass/_presentation.scss */
 .round {
   border-radius: 50%;
   width: 100%;
   margin: 0 auto;
+  -webkit-filter: sepia(70%);
+  /* Safari 6.0 - 9.0 */
+  filter: sepia(70%);
 }
 
-/* line 12, ../sass/_presentation.scss */
+/* line 18, ../sass/_presentation.scss */
 .presentationImages {
   width: 40%;
 }
 
-/* line 15, ../sass/_presentation.scss */
-#presentation {
-  font-family: 'Muli';
+/* line 21, ../sass/_presentation.scss */
+#presentation, .presName {
+  font-family: "Muli", sans-serif;
 }
 
-/* line 18, ../sass/_presentation.scss */
+/* line 24, ../sass/_presentation.scss */
 .question {
-  font-family: 'Muli';
+  font-family: "Muli", sans-serif;
   font-size: 1em;
   text-transform: uppercase;
+  border: 1px solid #43D8E5;
+  border-radius: 5px;
+  outline: none;
+  padding: 10px;
+  font-weight: bold;
+}
+/* line 34, ../sass/_presentation.scss */
+.question .answer {
+  padding-bottom: 20px;
 }
 
-/* line 18, ../sass/_contact.scss */
-#Tcheny {
-  font-family: "Droid Serif", serif;
+/* line 39, ../sass/_presentation.scss */
+.authorImages {
+  padding-top: 20px;
 }
 
+/* line 42, ../sass/_presentation.scss */
+#aboutUs {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  /* line 48, ../sass/_presentation.scss */
+  .presentationTitle {
+    font-size: 5em;
+  }
+
+  /* line 51, ../sass/_presentation.scss */
+  #presentation {
+    padding: 40px;
+  }
+
+  /* line 54, ../sass/_presentation.scss */
+  #aboutUs {
+    display: block;
+  }
+
+  /* line 58, ../sass/_presentation.scss */
+  .aboutAndImg {
+    padding: 20px 60px;
+  }
+
+  /* line 61, ../sass/_presentation.scss */
+  .smallScreen {
+    display: none;
+  }
+
+  /* line 64, ../sass/_presentation.scss */
+  #imageBigScreen {
+    display: none;
+  }
+
+  /* line 68, ../sass/_presentation.scss */
+  .separateur {
+    width: 90px;
+    height: 0;
+    border: 2px solid #43D8E5;
+  }
+
+  /* line 73, ../sass/_presentation.scss */
+  .presImg {
+    margin: 20px;
+  }
+
+  /* line 76, ../sass/_presentation.scss */
+  .imageAbout {
+    top: 20px;
+  }
+
+  /* line 79, ../sass/_presentation.scss */
+  .titreAbout {
+    text-transform: uppercase;
+  }
+}
 /* line 21, ../sass/_contact.scss */
 .navbar {
   padding: 20px 0;
@@ -58,11 +134,7 @@
   font-size: 50px;
   color: #323333;
 }
-/* line 39, ../sass/_contact.scss */
-#Tcheny .formulaire {
-  margin-top: 20px;
-}
-/* line 43, ../sass/_contact.scss */
+/* line 42, ../sass/_contact.scss */
 #Tcheny .formline {
   margin-bottom: 10px;
 }
