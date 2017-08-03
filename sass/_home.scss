@@ -1,3 +1,6 @@
+// Colors
+$blueBorrow: #79C4CF;
+
 // HOME
 
 #header {
@@ -5,68 +8,100 @@
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 30px;
-
-  & h1 {
-    font-size: 33px;
-  }
-
+  font-family: "Droid Serif", serif;
   & h2 {
     font-size: 24px;
+    color: #fff;
   }
 
-  & #logo {
-    margin-top: 20px;
-    width: 30px;
-    height: 30px;
+  & .logo {
+    display: flex;
+    justify-content: center;
+
+    & #logo {
+      margin-top: 20px;
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  & .btn {
+    margin-top: 10px;
+    font-family: "Muli", sans-serif;
+
   }
 }
 
 #three-boxes {
-  & h2 {
-    font-size: 12px;
-    color: #000;
-  }
-
   & a {
-    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    font-family: "selima";
 
-    &:hover {
-      text-decoration: none;
-    }
   }
 
   & #presentation-box {
     background-image: linear-gradient(rgb(0,0,0) 0%, rgba(221, 221, 214, 0.35) 0%), url("../medias/images/page-home/presentation.jpg");
     background-size: cover;
     min-height: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   & #produits-box {
     background-image: linear-gradient(rgb(0,0,0) 0%, rgba(221, 221, 214, 0.35) 0%), url("../medias/images/page-home/produits.jpg");
     background-size: cover;
     min-height: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   & #contact-box {
     background-image: linear-gradient(rgb(0,0,0) 0%, rgba(221, 221, 214, 0.35) 0%), url("../medias/images/page-home/contact.jpg");
     background-size: cover;
     min-height: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 // Presentation de l'entreprise
+
 #presentation-row {
+  font-family: "Muli", sans-serif;
   & h2 {
     font-size: 20px;
+    font-family: "Droid Serif", serif;
   }
 }
 // Derniers Tweets
+
 #last-tweets {
+  background-color: rgba(24, 187, 187, 0.54);
+  padding: 20px 0;
+  font-family: "Muli", sans-serif;
   & .fa-twitter {
     color: #1da1f2;
   }
-
   & p {
     font-size: 16px;
     font-style: italic;
+  }
+}
+
+// Dernier Avis
+
+#last-advices {
+  & h3 {
+    font-size: 20px;
+    font-family: "Droid Serif", serif;
+  }
+  & p {
+    font-size: 14px;
+    font-family: "Muli", sans-serif;
   }
 }
