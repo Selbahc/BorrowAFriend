@@ -46,20 +46,25 @@ $grey: #EAEAEA;
   .contact {
     padding: 20px 0px 60px 0px;
   }
-  .formulaire {
-    text-align: center;
-    .formline {
-      margin-bottom: 11px;
-      text-align: left;
-    }
-    .btn-custom {
-      background-color: $blue;
-      color: $white;
-      &:hover {
-        background-color: darken($blue,30%);
-      }
+  .form-group {
+    margin-bottom: 11px;
+    text-align: left;
+  }
+  .btn-custom {
+    margin-bottom: 20px;
+    background-color: $blue;
+    color: $white;
+    &:hover {
+      background-color: darken($blue,30%);
     }
   }
+.first-name-error,
+.last-name-error,
+.email-error,
+.message-error {
+  color: $red;
+  font-weight: 600;
+}
   span {
     color: $red;
   }
