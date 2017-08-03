@@ -1,4 +1,34 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "selima";
+  src: url(../fonts/selima/selima_.otf);
+}
+@font-face {
+  font-family: "Droid Serif", serif;
+  src: url(../fonts/Droid_Serif/DroidSerif.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Muli", sans-serif;
+  src: url(../fonts/Muli/Muli-Bold.ttf);
+  font-weight: bold;
+}
+/* line 20, ../sass/_bootstrap-custom.scss */
+.navbar {
+  padding: 20px 0;
+}
+/* line 22, ../sass/_bootstrap-custom.scss */
+.navbar img {
+  margin-left: 40px;
+  width: 50px;
+  height: 50px;
+}
+/* line 27, ../sass/_bootstrap-custom.scss */
+.navbar li {
+  margin-right: 40px;
+  font-family: "Muli",sans-serif;
+}
+
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
