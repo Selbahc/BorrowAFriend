@@ -1,4 +1,73 @@
 @charset "UTF-8";
+/* line 3, ../sass/_home.scss */
+#header {
+  background-image: linear-gradient(black 0%, rgba(208, 208, 207, 0.5) 0%), url("../medias/images/page-home/home.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 30px;
+}
+/* line 9, ../sass/_home.scss */
+#header h1 {
+  font-size: 33px;
+}
+/* line 13, ../sass/_home.scss */
+#header h2 {
+  font-size: 24px;
+}
+/* line 17, ../sass/_home.scss */
+#header #logo {
+  margin-top: 20px;
+  width: 30px;
+  height: 30px;
+}
+
+/* line 25, ../sass/_home.scss */
+#three-boxes h2 {
+  font-size: 12px;
+  color: #000;
+}
+/* line 30, ../sass/_home.scss */
+#three-boxes a {
+  text-decoration: none;
+}
+/* line 33, ../sass/_home.scss */
+#three-boxes a:hover {
+  text-decoration: none;
+}
+/* line 38, ../sass/_home.scss */
+#three-boxes #presentation-box {
+  background-image: linear-gradient(black 0%, rgba(221, 221, 214, 0.35) 0%), url("../medias/images/page-home/presentation.jpg");
+  background-size: cover;
+  min-height: 10em;
+}
+/* line 44, ../sass/_home.scss */
+#three-boxes #produits-box {
+  background-image: linear-gradient(black 0%, rgba(221, 221, 214, 0.35) 0%), url("../medias/images/page-home/produits.jpg");
+  background-size: cover;
+  min-height: 10em;
+}
+/* line 50, ../sass/_home.scss */
+#three-boxes #contact-box {
+  background-image: linear-gradient(black 0%, rgba(221, 221, 214, 0.35) 0%), url("../medias/images/page-home/contact.jpg");
+  background-size: cover;
+  min-height: 10em;
+}
+
+/* line 58, ../sass/_home.scss */
+#presentation-row h2 {
+  font-size: 20px;
+}
+
+/* line 64, ../sass/_home.scss */
+#last-tweets .fa-twitter {
+  color: #1da1f2;
+}
+/* line 68, ../sass/_home.scss */
+#last-tweets p {
+  font-size: 16px;
+  font-style: italic;
+}
+
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -4513,32 +4582,32 @@ a.btn.disabled, fieldset[disabled] a.btn {
 /* line 71, ../../../../../../../../var/lib/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_buttons.scss */
 .btn-primary {
   color: #fff;
-  background-color: #337ab7;
-  border-color: #2e6da4;
+  background-color: transparent;
+  border-color: #fff;
 }
 /* line 11, ../../../../../../../../var/lib/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-primary:focus, .btn-primary.focus {
   color: #fff;
-  background-color: #286090;
-  border-color: #122b40;
+  background-color: transparent;
+  border-color: #bfbfbf;
 }
 /* line 17, ../../../../../../../../var/lib/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-primary:hover {
   color: #fff;
-  background-color: #286090;
-  border-color: #204d74;
+  background-color: transparent;
+  border-color: #e0e0e0;
 }
 /* line 22, ../../../../../../../../var/lib/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #286090;
-  border-color: #204d74;
+  background-color: transparent;
+  border-color: #e0e0e0;
 }
 /* line 29, ../../../../../../../../var/lib/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:active.focus, .btn-primary.active:hover, .btn-primary.active:focus, .btn-primary.active.focus, .open > .btn-primary.dropdown-toggle:hover, .open > .btn-primary.dropdown-toggle:focus, .open > .btn-primary.dropdown-toggle.focus {
   color: #fff;
-  background-color: #204d74;
-  border-color: #122b40;
+  background-color: transparent;
+  border-color: #bfbfbf;
 }
 /* line 37, ../../../../../../../../var/lib/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
@@ -4546,12 +4615,12 @@ a.btn.disabled, fieldset[disabled] a.btn {
 }
 /* line 45, ../../../../../../../../var/lib/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary.focus {
-  background-color: #337ab7;
-  border-color: #2e6da4;
+  background-color: transparent;
+  border-color: #fff;
 }
 /* line 53, ../../../../../../../../var/lib/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_buttons.scss */
 .btn-primary .badge {
-  color: #337ab7;
+  color: transparent;
   background-color: #fff;
 }
 

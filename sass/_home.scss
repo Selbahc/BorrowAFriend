@@ -1,1 +1,72 @@
 // HOME
+
+#header {
+  background-image: linear-gradient(rgb(0,0,0) 0%, rgba(208, 208, 207, 0.5) 0%), url("../medias/images/page-home/home.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 30px;
+
+  & h1 {
+    font-size: 33px;
+  }
+
+  & h2 {
+    font-size: 24px;
+  }
+
+  & #logo {
+    margin-top: 20px;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+#three-boxes {
+  & h2 {
+    font-size: 12px;
+    color: #000;
+  }
+
+  & a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  & #presentation-box {
+    background-image: linear-gradient(rgb(0,0,0) 0%, rgba(221, 221, 214, 0.35) 0%), url("../medias/images/page-home/presentation.jpg");
+    background-size: cover;
+    min-height: 10em;
+  }
+
+  & #produits-box {
+    background-image: linear-gradient(rgb(0,0,0) 0%, rgba(221, 221, 214, 0.35) 0%), url("../medias/images/page-home/produits.jpg");
+    background-size: cover;
+    min-height: 10em;
+  }
+
+  & #contact-box {
+    background-image: linear-gradient(rgb(0,0,0) 0%, rgba(221, 221, 214, 0.35) 0%), url("../medias/images/page-home/contact.jpg");
+    background-size: cover;
+    min-height: 10em;
+  }
+}
+// Presentation de l'entreprise
+#presentation-row {
+  & h2 {
+    font-size: 20px;
+  }
+}
+// Derniers Tweets
+#last-tweets {
+  & .fa-twitter {
+    color: #1da1f2;
+  }
+
+  & p {
+    font-size: 16px;
+    font-style: italic;
+  }
+}
