@@ -17,14 +17,26 @@
         //  url(../fonts/Muli/Muli-Regular.ttf),
         //  url(../fonts/Muli/Muli-Black.ttf);
 }
+@mixin wh($width, $height) {
+  width: $width;
+  height: $height;
+}
+@mixin fonts($family, $size, $color) {
+  font-family: $family;
+  font-size: $size;
+  color: $color;
+}
+
+
 .navbar {
+  background-color: black;
   padding: 20px 0;
   img {
     margin-left: 40px;
-    width: 50px;
-    height: 50px;
+    @include wh(50px, 50px);
   }
-  li {
+  li a{
+    color: red;
     margin-right: 40px;
     font-family: "Muli",sans-serif;
   }
