@@ -16,57 +16,152 @@
   text-transform: uppercase;
 }
 
-/* line 22, ../sass/_contact.scss */
+/* line 23, ../sass/_contact.scss */
 .navbar {
   padding: 20px 0;
+  text-transform: uppercase;
 }
-/* line 24, ../sass/_contact.scss */
+/* line 26, ../sass/_contact.scss */
 .navbar img {
   margin-left: 50px;
   width: 70px;
   height: 70px;
 }
-/* line 28, ../sass/_contact.scss */
+/* line 30, ../sass/_contact.scss */
 .navbar li a {
   margin-top: 10px;
-  margin-right: 40px;
+  margin-right: 20px;
   font-family: "Muli", sans-serif;
-  font-size: 17px;
+  font-size: 16px;
   color: #43D8E5;
 }
 
-/* line 34, ../sass/_contact.scss */
+/* line 36, ../sass/_contact.scss */
 #Tcheny {
   font-family: "Droid Serif", serif;
   font-size: 15px;
   color: #323333;
 }
-/* line 36, ../sass/_contact.scss */
+/* line 38, ../sass/_contact.scss */
 #Tcheny .titlecontact {
-  padding-bottom: 50px;
+  padding-bottom: 20px;
   font-family: "selima";
   font-size: 50px;
   color: #323333;
 }
-/* line 40, ../sass/_contact.scss */
+/* line 42, ../sass/_contact.scss */
+#Tcheny .separateur {
+  width: 90px;
+  height: 0;
+  border: 2px solid #43D8E5;
+}
+/* line 46, ../sass/_contact.scss */
+#Tcheny .contact {
+  padding: 20px 0px 60px 0px;
+}
+/* line 49, ../sass/_contact.scss */
 #Tcheny .formulaire {
   text-align: center;
 }
-/* line 42, ../sass/_contact.scss */
+/* line 51, ../sass/_contact.scss */
 #Tcheny .formulaire .formline {
   margin-bottom: 11px;
   text-align: left;
 }
-/* line 46, ../sass/_contact.scss */
+/* line 55, ../sass/_contact.scss */
 #Tcheny .formulaire .btn-custom {
   background-color: #43D8E5;
   color: #fff;
 }
-/* line 52, ../sass/_contact.scss */
+/* line 58, ../sass/_contact.scss */
+#Tcheny .formulaire .btn-custom:hover {
+  background-color: #11757e;
+}
+/* line 63, ../sass/_contact.scss */
 #Tcheny span {
   color: #C52222;
 }
+/* line 66, ../sass/_contact.scss */
+#Tcheny footer {
+  width: auto;
+  height: 150px;
+  background-color: #EAEAEA;
+}
+/* line 70, ../sass/_contact.scss */
+#Tcheny footer li {
+  display: inline;
+  padding-right: 30px;
+}
+/* line 73, ../sass/_contact.scss */
+#Tcheny footer li a {
+  font-size: 17px;
+  text-decoration: none;
+  color: #323333;
+}
+/* line 77, ../sass/_contact.scss */
+#Tcheny footer li a:hover {
+  text-shadow: 2px 2px 5px #9e9e9e;
+}
+/* line 81, ../sass/_contact.scss */
+#Tcheny footer li .fa {
+  font-size: 30px;
+}
+/* line 85, ../sass/_contact.scss */
+#Tcheny footer .about:hover {
+  color: #3b5998;
+}
+/* line 88, ../sass/_contact.scss */
+#Tcheny footer .product:hover {
+  color: #0b96b5;
+}
+/* line 91, ../sass/_contact.scss */
+#Tcheny footer .contact:hover {
+  color: #fff500;
+}
+/* line 94, ../sass/_contact.scss */
+#Tcheny footer p {
+  margin: 0;
+}
+/* line 97, ../sass/_contact.scss */
+#Tcheny footer .fa {
+  color: #323333;
+  transition: 0.8s;
+  transition-duration: 3.3s;
+}
+/* line 102, ../sass/_contact.scss */
+#Tcheny footer .fa-facebook:hover {
+  color: #3b5998;
+  transform: rotateY(360deg);
+  transition: 0.5s;
+  transition-duration: 3s;
+}
+/* line 108, ../sass/_contact.scss */
+#Tcheny footer .fa-twitter:hover {
+  color: #0b96b5;
+  transform: rotateY(360deg);
+  transition: 0.5s;
+  transition-duration: 3s;
+}
+/* line 114, ../sass/_contact.scss */
+#Tcheny footer .fa-instagram:hover {
+  color: #fff500;
+  transform: rotateY(360deg);
+  transition: 0.5s;
+  transition-duration: 3s;
+}
 
+@media (max-width: 991px) {
+  /* line 124, ../sass/_contact.scss */
+  footer {
+    padding: 5px 0;
+  }
+}
+@media (min-width: 992px) {
+  /* line 129, ../sass/_contact.scss */
+  footer {
+    padding: 60px 0;
+  }
+}
 @font-face {
   font-family: "selima";
   src: url(../fonts/selima/selima_.otf);
@@ -5693,7 +5788,7 @@ tbody.collapse.in {
 .navbar {
   position: relative;
   min-height: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   border: 1px solid transparent;
 }
 /* line 14, ../../../../.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
