@@ -17,7 +17,8 @@
   <!-- Home  -->
 
   <!-- Header -->
-  <div class="container-fluid" id="home">
+  <!-- Mobile Header -->
+  <div class="container-fluid mobile-header" id="home">
     <div class="row text-center" id="header">
       <div class="logo">
         <a href="#home"><img src="medias/images/logo-transp.png" alt="" class="img-responsive" id="logo"></a>
@@ -27,32 +28,49 @@
     </div>
   </div>
 
+  <!-- Desktop Header (video) -->
+  <div class="header-container" id="desktop-header">
+    <div class="logo">
+      <a href="#home"><img src="medias/images/logo-transp.png" alt="" class="img-responsive" id="logo"></a>
+    </div>
+    <div class="header-text text-center">
+      <h2>Mieux Vaut Être Bien <br>Accompagné Que Seul</h2>
+    </div>
+      <div class="video-container">
+        <video src="medias/videos/video-flou.m4v" type="video/m4v" preload="true"
+        autoplay="autoplay" loop="loop" volume="0"></video>
+        </div>
+      </div>
+
+
   <!-- Three Boxes -->
   <div id="three-boxes">
       <div id="presentation-box" style="flex: 1 1 0%;">
         <p>A propos</p>
         <div class="btn-container">
-          <a href="" class="btn btn-primary open">J'y vais!</a>
+          <a href="presentation.html" target="_blank" class="btn btn-primary open">J'y vais!</a>
         </div>
       </div>
       <div id="produits-box" style="flex: 1 1 0%;">
         <p>Produits</p>
         <div class="btn-container">
-          <a href="" class="btn btn-primary open">J'y vais!</a>
+          <a href="product.html" target="_blank" class="btn btn-primary open">J'y vais!</a>
         </div>
       </div>
       <div id="contact-box" style="flex: 1 1 0%;">
         <p>Contact</p>
         <div class="btn-container">
-          <a href="" class="btn btn-primary open">J'y vais!</a>
+          <a href="contact.html" target="_blank" class="btn btn-primary open">J'y vais!</a>
         </div>
       </div>
   </div>
 
   <!-- Presentation de l'entreprise -->
   <div class="container-fluid text-center" id="presentation-row">
-    <h2>Qui sommes nous?</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <h2>Une agence de rencontre amicale</h2>
+    <h2>Faites-vous des amis !</h2>
+    <p>Vous avez envie de vous reconstituer un cercle d’amis, qui partagent les mêmes centres d’intérêts, qui habitent à proximité? Peut-être souhaitez-vous juste rencontrer quelqu’un pour aller au cinéma, à un concert ou jouer aux échecs ?
+Vous êtes au bon endroit!</p>
   </div>
 
   <!-- Derniers Tweets -->
@@ -61,15 +79,27 @@
 
       <div class="carousel-inner">
         <div class="item active">
-          <p><i class="fa fa-twitter" aria-hidden="true"></i> " Lorem ipsum dolor sit amet, consectetur adipisicing elit. "</p>
+          <p><i class="fa fa-twitter" aria-hidden="true"></i>
+            "Même si les demandes d’amitiés sont moins fréquentes que les recherches amoureuses.
+            Certains sites ont décidé de se spécialiser dans ce domaine.
+            C’est le cas de BorrowAFriend.com, deux profils principaux: certains viennent de se
+            séparer et ont perdu leur cercle d’amis, d’autres ont déménagés dans une région où ils
+            ne connaissent personnes. Les amitiés se créent en fonction des points communs." Le Parisien</p>
         </div>
 
         <div class="item">
-          <p><i class="fa fa-twitter" aria-hidden="true"></i> " Lorem ipsum dolor sit amet, consectetur adipisicing elit. "</p>
+          <p><i class="fa fa-twitter" aria-hidden="true"></i>
+            "Les sites de rencontres permettant de mettre en relation des personnes seuls en leur
+            offrant la possibilité de créer des liens avec des personnalités différentes?
+            BorrowAFriend.com connaît cette année une croissance significative. De plus en plus de
+            personne peuvent enfin trouver l’amitié." Le Figaro</p>
         </div>
 
         <div class="item">
-          <p><i class="fa fa-twitter" aria-hidden="true"></i> " Lorem ipsum dolor sit amet, consectetur adipisicing elit. "</p>
+          <p><i class="fa fa-twitter" aria-hidden="true"></i>
+            "Le système de mise en relation compatible d’amitié repose sur son centre d’intérêt.
+            BorrowAFriend.com propose à chaque membre le profil de plusieurs amis qui lui correspond
+            afin de faciliter au mieux leur rencontre." Le Monde</p>
         </div>
       </div>
     </div>
@@ -77,34 +107,40 @@
 
 <!-- Derniers Avis -->
 <div class="text-center" id="last-advices">
-  <h3>ILS PARLENTS DE NOUS</h3>
+  <h3>ILS PARLENT DE NOUS</h3>
 
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
     <div class="carousel-inner" id="advice-slider">
       <div class="item active">
         <img class="img-responsive" src="medias/images/page-home/avis/avis1.jpg" alt="avis 1">
-        <p>" Lorem ipsum dolor sit amet, consectetur adipisicing elit. "</p>
+        <p>"J’ai été muté dans une autre région, je me suis retrouvé tout seul du jour au lendemain, ma famille et mes amis me manquaient.
+BorrowAFriend.com, m’a permis de faire des rencontres avec des gens ayant les mêmes centres d’intérêt que moi (en l’occurrence les chats et le pâté)
+." Félix</p>
       </div>
 
       <div class="item">
         <img class="img-responsive" src="medias/images/page-home/avis/avis2.jpg" alt="avis 2">
-        <p>" Lorem ipsum dolor sit amet, consectetur adipisicing elit. "</p>
+        <p>"Suite à une séparation des plus douloureuses, j’ai pleuré toutes les larmes de mon corps et j’avais besoin d’être entouré, du coup j’ai voulu rencontrer de nouvelles personnes.
+C’est pas si facile qu’on le croit de se faire des amis en région parisienne.
+Mais avec BorrowAFriend.com nous sommes tous la pour la même raison ! Et pour la première fois de ma vie j’ai une meilleure amie Amelle.
+." Prescillia</p>
       </div>
 
       <div class="item">
         <img class="img-responsive" src="medias/images/page-home/avis/avis3.jpg" alt="avis 3">
-        <p>" Lorem ipsum dolor sit amet, consectetur adipisicing elit. "</p>
+        <p>"Être de lumière, humaniste et philanthrope, j’ai décidé de consacrer et donner les quelques jours de vie qu’il me restait, aux personnes en difficulté, en recherche d’amis. C’est là que, grâce à BorrowAFriend.com, j’ai rencontré Prescillia, qui selon l’expression consacrée, était “au fond du trou”. Depuis, elle me suit partout.
+." Amelle</p>
       </div>
 
       <div class="item">
         <img class="img-responsive" src="medias/images/page-home/avis/avis4.jpg" alt="avis 4">
-        <p>" Lorem ipsum dolor sit amet, consectetur adipisicing elit. "</p>
+        <p>"Je ne sais pas ce que je serai devenu sans BorrowAFriend.com .."</p>
       </div>
 
       <div class="item">
         <img class="img-responsive" src="medias/images/page-home/avis/match.jpg" alt="match">
-        <p>" Lorem ipsum dolor sit amet, consectetur adipisicing elit. "</p>
+        <p>"Nous sommes maintenant inséparables!"</p>
       </div>
 
     </div>
