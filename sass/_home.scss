@@ -1,53 +1,98 @@
 // Colors
 $blueBorrow: #79C4CF;
+
 // HOME
+
+// Mobile Header
 #header {
-  background-image: url("../medias/images/page-home/home.jpg");
+  background-image: linear-gradient(rgba(0,0,0, 0.4) 0, rgba(0, 0, 0, 0.4) 0), url("../medias/images/page-home/home.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  padding-bottom: 30px;
   font-family: "Droid Serif", serif;
 
-  & h2 {
-    font-size: 22px;
+  h2 {
+    font-size: 20px;
     color: #fff;
   }
 
-  & .logo {
+  .logo {
     display: flex;
     justify-content: center;
 
-    & #logo {
+    #logo {
       margin-top: 20px;
-      width: 100px;
-      height: 100px;
     }
   }
 
-  & .btn {
+  .btn {
     margin-top: 10px;
     font-family: "Muli", sans-serif;
+    font-size: 12px;
   }
 }
 
 .open {
   transform: translateY(600%);
 }
+
+// Desktop Header (video)
+.header-container {
+  width: 100%;
+  border-left: none;
+  border-right: none;
+  position: relative;
+  height: 27em;
+  .header-text {
+    h2 {
+      font-size: 50px;
+      text-transform: uppercase;
+      color: #fff;
+      font-family: "selima";
+
+    }
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+
+    #logo {
+      margin-top: 20px;
+      @include wh(140px,140px)
+    }
+  }
+  .video-container {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+  video {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+  }
+
+}
+
 // Three Boxes
+
 #three-boxes {
   display: flex;
   margin: 0;
 
-  & p {
-    font-size: 14px;
+  p {
     text-transform: uppercase;
     text-align: center;
     color: #fff;
     font-family: "selima";
+    text-decoration: overline;
   }
 
-  & #presentation-box {
-    background-image: url("../medias/images/page-home/presentation.jpg");
+  #contact-box,
+  #presentation-box,
+  #produits-box {
     background-size: cover;
     display: flex;
     align-items: center;
@@ -57,26 +102,17 @@ $blueBorrow: #79C4CF;
     position: relative;
   }
 
-  & #produits-box {
-    background-image: url("../medias/images/page-home/produits.jpg");
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: flex 0.7s cubic-bezier(0.61,-0.19,0.7,-0.11);
-    overflow: hidden;
-    position: relative;
+  #presentation-box {
+    background-image: linear-gradient(rgba(0,0,0, 0.4) 0, rgba(0, 0, 0, 0.4) 0), url("../medias/images/page-home/presentation.jpg");
   }
 
-  & #contact-box {
-    background-image: url("../medias/images/page-home/contact.jpg");
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: flex 0.7s cubic-bezier(0.61,-0.19,0.7,-0.11);
-    overflow: hidden;
-    position: relative;
+  #produits-box {
+    background-image: linear-gradient(rgba(0,0,0, 0.4) 0, rgba(0, 0, 0, 0.4) 0), url("../medias/images/page-home/produits.jpg");
+  }
+
+  #contact-box {
+    background-position: center;
+    background-image: linear-gradient(rgba(0,0,0, 0.4) 0, rgba(0, 0, 0, 0.4) 0), url("../medias/images/page-home/contact.jpg");
   }
 }
 
@@ -99,13 +135,9 @@ $blueBorrow: #79C4CF;
   }
 }
 // Presentation de l'entreprise
+
 #presentation-row {
   font-family: "Muli", sans-serif;
-
-  & h2 {
-    font-size: 20px;
-    font-family: "Droid Serif", serif;
-  }
 }
 // Derniers Tweets
 
@@ -114,46 +146,232 @@ $blueBorrow: #79C4CF;
   padding: 20px 0;
   font-family: "Muli", sans-serif;
 
-  & .fa-twitter {
+  .fa-twitter {
     color: #1da1f2;
-  }
-
-  & p {
-    font-size: 16px;
-    font-style: italic;
   }
 }
 // Dernier Avis
+
 #last-advices {
-  & h3 {
-    font-size: 20px;
+  h3 {
     font-family: "Droid Serif", serif;
   }
 
-  & p {
-    font-size: 14px;
+  p {
     font-family: "Muli", sans-serif;
   }
 }
-@media (max-width: 399px) {
-  #contact-box,
-  #presentation-box,
-  #produits-box {
-    min-height: 10em;
+// Footer
+
+footer {
+  @include wh(auto, 150px);
+  background-color: $grey;
+
+  li {
+    display: inline;
+    padding-right: 30px;
+
+    a {
+      text-decoration: none;
+      color: $black;
+
+      &:hover {
+        text-shadow: 2px 2px 5px darken($grey,30%);
+      }
+    }
+
+    .fa {
+      font-size: 30px;
+    }
+  }
+
+  .about:hover {
+    color: #3b5998;
+  }
+
+  .product:hover {
+    color: #0b96b5;
+  }
+
+  .contact:hover {
+    color: #fff500;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .fa {
+    color: $black;
+    transition: 0.8s;
+    transition-duration: 3.3s;
+  }
+
+  .fa-facebook:hover {
+    color: #3b5998;
+    transform: rotateY(360deg);
+    transition: 0.5s;
+    transition-duration: 3s;
+  }
+
+  .fa-twitter:hover {
+    color: #0b96b5;
+    transform: rotateY(360deg);
+    transition: 0.5s;
+    transition-duration: 3s;
+  }
+
+  .fa-instagram:hover {
+    color: #fff500;
+    transform: rotateY(360deg);
+    transition: 0.5s;
+    transition-duration: 3s;
   }
 }
-@media (min-width: 400px) {
-  #contact-box,
+// MEDIA QUERIES
+
+// >> 600px
+@media (max-width: 599px) {
+  // Header
+  #header {
+    padding: 20px 0;
+    .logo {
+      #logo {
+        @include wh (100px, 100px);
+      }
+    }
+  }
+
+  // Desktop-Header
+  #desktop-header {
+    display: none;
+  }
+
+  // Présentation Row
+  #presentation-row {
+    h2 {
+      font-size: 20px;
+      font-family: "Droid Serif", serif;
+    }
+  }
+
+// Three Boxes
   #presentation-box,
+  #contact-box,
   #produits-box {
-    min-height: 15em;
+    min-height: 10em;
+    font-size: 16px;
+  }
+
+  // Last Tweets
+  #last-tweets {
+    p {
+      font-size: 16px;
+      font-style: italic;
+    }
+  }
+
+  // Derniers Avis
+  #last-advices {
+    h3 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 14px;
+    }
+    #myCarousel {
+      img {
+        @include wh (60%, 150px);
+        border-radius: 5px;
+        box-shadow: 3px 3px 3px ;
+        margin: auto;
+        margin-bottom: 15px;
+      }
+    }
   }
 }
 
+///////
+
 @media (min-width: 600px) {
+  // Header
+  #header {
+    padding: 22px 0;
+    .logo {
+      #logo {
+        @include wh (110px, 110px);
+      }
+    }
+  }
+
+
+
+  // Présentation Row
+  #presentation-row {
+    h2 {
+      font-size: 33px;
+      font-family: "Droid Serif", serif;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+
+// Three Boxes
   #contact-box,
   #presentation-box,
   #produits-box {
-    min-height: 20em;
+    min-height: 13.5em;
   }
+// Last Tweets
+#last-tweets {
+  p {
+    font-size: 22px;
+    font-style: italic;
+  }
+}
+
+// Derniers Avis
+#last-advices {
+  h3 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 22px;
+  }
+
+#myCarousel {
+  img {
+    @include wh (60%, 260px);
+    border-radius: 5px;
+    box-shadow: 0 0 12px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}
+
+}
+
+// Medium screen >> 992px
+
+@media (min-width: 992px) {
+  // Header
+  #header {
+    display: none;
+  }
+
+  // Three Boxes
+  #three-boxes {
+    p {
+      font-size: 25px;
+    }
+  }
+
+  #contact-box,
+  #presentation-box,
+  #produits-box {
+    min-height: 18em;
+  }
+
+}
 }
