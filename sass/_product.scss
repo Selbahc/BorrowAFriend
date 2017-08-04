@@ -1,7 +1,7 @@
-
 //MIXINS
-@mixin product-card-bg($img){
-background: url("../medias/images/product-page/"+$img+".jpeg");
+@mixin product-card-bg($img, $transparency){
+background: -webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,$transparency)),to(rgba(0,0,0,$transparency))), url("../medias/images/product-page/"+$img+".jpeg");
+background: linear-gradient(rgba(0,0,0,$transparency),rgba(0,0,0,$transparency)), url("../medias/images/product-page/"+$img+".jpeg");
 background-size: cover;
 }
 @mixin logo-blue-rgba($opacity) {
@@ -19,7 +19,7 @@ $logo-blue : #00DEE8;
   padding: 0 !important;
   position: relative;
   .back{
-    @include logo-blue-rgba(0.6);
+    @include logo-blue-rgba(0.8);
     height: 30vh;
     overflow: scroll;
     position: absolute;
@@ -27,9 +27,9 @@ $logo-blue : #00DEE8;
     left: 0;
     display: none;
     p{
-      font-size: 1.1em;
-      // text-align: justify;
-      margin: 5px 5px 0 10px;
+      font-size: .9em;
+      text-align: justify;
+      margin-top: 10px;
     }
   }
 }
@@ -49,42 +49,42 @@ $logo-blue : #00DEE8;
   flex-direction: column;
   span{
     color: $logo-blue;
+    font-size: 1.3em;
   }
   h1{
     color: $white;
     font-family: "selima", sans-serif;
-    font-size: 2.8em;
+    font-size: 3em;
   }
 }
 
 .product-party{
-  @include product-card-bg("fetard");
+  @include product-card-bg("fetard", 0.5);
 }
 .product-geek{
-  @include product-card-bg("geek");
+  @include product-card-bg("geek", 0.5);
 }
 .product-walk{
-  @include product-card-bg("flaneur");
+  @include product-card-bg("flaneur", 0.5);
 }
 .product-sport{
-  @include product-card-bg("sportif");
+  @include product-card-bg("sportif", 0.5);
 }
 .product-sad{
-  @include product-card-bg("confident");
+  @include product-card-bg("confident", 0.5);
 }
 .product-restaurant{
-  @include product-card-bg("glouton");
+  @include product-card-bg("glouton", 0.5);
 }
 .product-clown{
-  @include product-card-bg("comique");
+  @include product-card-bg("comique", 0.5);
 }
 .product-culture{
-  @include product-card-bg("cultives");
+  @include product-card-bg("cultives", 0.5);
 }
 
 .product-price{
   font-family: "Muli", sans-serif;
-  background-color: #FFF;
 
   h1{
     font-size: 1.2em;
@@ -92,11 +92,10 @@ $logo-blue : #00DEE8;
     text-transform: uppercase;
   }
   .product-price-detail{
-    // border-radius: .5em;
-    margin: 1em 0;
+    margin-top: 1em;
+    margin-bottom: 1em;
     border-top: 1px solid $logo-blue;
-    border-bottom: 1px solid $logo-blue;
-    // @include logo-blue-rgba(0.2);
+    // border-bottom: 1px solid $logo-blue;
 
   }
   h2{
@@ -110,5 +109,97 @@ $logo-blue : #00DEE8;
 }
 
 @media (min-width: 992px){
-
+  .product-card-flip{
+    span{
+      font-size: 1.8em;
+    }
+    h1{
+      font-size: 5em;
+    }
+    .back{
+      p{
+        font-size: 1.1em;
+        text-align: justify;
+        // margin: 15px 5px 0 5px;
+      }
+    }
+    &:hover{
+      -webkit-transform: scale(-1.1);
+      transform: scale(0.95);
+      -webkit-transform-origin: center;
+      transform-origin: center;
+    }
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  .product-price-detail{
+    height: 25vh;
+    border-left: 1px solid $logo-blue;
+    border-top: none !important;
+    border-bottom: none !important;
+  }
+  .product-party{
+    &:hover{
+      @include product-card-bg("fetard", 0.2);
+      h1{
+        background-color: rgba(0,0,0,0.5);
+      }
+    }
+  }
+  .product-geek{
+    &:hover{
+      @include product-card-bg("geek", 0.2);
+      h1{
+        background-color: rgba(0,0,0,0.5);
+      }
+    }
+  }
+  .product-walk{
+    &:hover{
+      @include product-card-bg("flaneur", 0.2);
+      h1{
+        background-color: rgba(0,0,0,0.5);
+      }
+    }
+  }
+  .product-sport{
+    &:hover{
+      @include product-card-bg("sportif", 0.2);
+      h1{
+        background-color: rgba(0,0,0,0.5);
+      }
+    }
+  }
+  .product-sad{
+    &:hover{
+      @include product-card-bg("confident", 0.2);
+      h1{
+        background-color: rgba(0,0,0,0.5);
+      }
+    }
+  }
+  .product-restaurant{
+    &:hover{
+      @include product-card-bg("glouton", 0.2);
+      h1{
+        background-color: rgba(0,0,0,0.5);
+      }
+    }
+  }
+  .product-clown{
+    &:hover{
+      @include product-card-bg("comique", 0.2);
+      h1{
+        background-color: rgba(0,0,0,0.5);
+      }
+    }
+  }
+  .product-culture{
+    &:hover{
+      @include product-card-bg("cultives", 0.2);
+      h1{
+        background-color: rgba(0,0,0,0.5);
+      }
+    }
+  }
 }

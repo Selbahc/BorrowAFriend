@@ -45,6 +45,71 @@ $grey: #EAEAEA;
     color: $black;
   }
 }
+footer {
+  @include wh(auto, 150px);
+  background-color: $grey;
+
+  li {
+    display: inline;
+    padding-right: 30px;
+    a {
+      text-decoration: none;
+      color: $black;
+      &:hover {
+        text-shadow: 2px 2px 5px darken($grey,30%);
+      }
+    }
+    .fa {
+      font-size: 30px;
+    }
+  }
+  .about:hover {
+    color: #3b5998;
+  }
+  .product:hover {
+    color: #0b96b5;
+  }
+  .contact:hover {
+    color: #fff500;
+  }
+  p {
+    margin: 0;
+  }
+  .fa {
+    color: $black;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+    -webkit-transition-duration: 3.3s;
+            transition-duration: 3.3s;
+  }
+  .fa-facebook:hover {
+    color: #3b5998;
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-transition-duration: 3s;
+            transition-duration: 3s;
+  }
+  .fa-twitter:hover {
+    color: #0b96b5;
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-transition-duration: 3s;
+            transition-duration: 3s;
+  }
+  .fa-instagram:hover {
+    color: #fff500;
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-transition-duration: 3s;
+            transition-duration: 3s;
+  }
+}
 #Tcheny {
   @include fonts($Droid, $black);
   //  15px,
@@ -81,71 +146,6 @@ $grey: #EAEAEA;
 }
   span {
     color: $red;
-  }
-  footer {
-    @include wh(auto, 150px);
-    background-color: $grey;
-
-    li {
-      display: inline;
-      padding-right: 30px;
-      a {
-        text-decoration: none;
-        color: $black;
-        &:hover {
-          text-shadow: 2px 2px 5px darken($grey,30%);
-        }
-      }
-      .fa {
-        font-size: 30px;
-      }
-    }
-    .about:hover {
-      color: #3b5998;
-    }
-    .product:hover {
-      color: #0b96b5;
-    }
-    .contact:hover {
-      color: #fff500;
-    }
-    p {
-      margin: 0;
-    }
-    .fa {
-      color: $black;
-      -webkit-transition: 0.8s;
-      transition: 0.8s;
-      -webkit-transition-duration: 3.3s;
-              transition-duration: 3.3s;
-    }
-    .fa-facebook:hover {
-      color: #3b5998;
-      -webkit-transform: rotateY(360deg);
-              transform: rotateY(360deg);
-      -webkit-transition: 0.5s;
-      transition: 0.5s;
-      -webkit-transition-duration: 3s;
-              transition-duration: 3s;
-    }
-    .fa-twitter:hover {
-      color: #0b96b5;
-      -webkit-transform: rotateY(360deg);
-              transform: rotateY(360deg);
-      -webkit-transition: 0.5s;
-      transition: 0.5s;
-      -webkit-transition-duration: 3s;
-              transition-duration: 3s;
-    }
-    .fa-instagram:hover {
-      color: #fff500;
-      -webkit-transform: rotateY(360deg);
-              transform: rotateY(360deg);
-      -webkit-transition: 0.5s;
-      transition: 0.5s;
-      -webkit-transition-duration: 3s;
-              transition-duration: 3s;
-    }
   }
 }
 
