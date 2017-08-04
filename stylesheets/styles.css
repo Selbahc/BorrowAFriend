@@ -1,21 +1,4 @@
 @charset "UTF-8";
-/* line 5, ../sass/_presentation.scss */
-.round {
-  border-radius: 50%;
-}
-
-/* line 10, ../sass/_presentation.scss */
-#presentation {
-  font-family: 'Muli';
-}
-
-/* line 13, ../sass/_presentation.scss */
-.question {
-  font-family: 'Muli';
-  font-size: 1em;
-  text-transform: uppercase;
-}
-
 /* line 22, ../sass/_contact.scss */
 .navbar {
   padding: 20px 0;
@@ -49,26 +32,94 @@
 }
 
 /* line 46, ../sass/_contact.scss */
+footer {
+  width: auto;
+  height: 150px;
+  background-color: #EAEAEA;
+}
+/* line 50, ../sass/_contact.scss */
+footer li {
+  display: inline;
+  padding-right: 30px;
+}
+/* line 53, ../sass/_contact.scss */
+footer li a {
+  text-decoration: none;
+  color: #323333;
+}
+/* line 56, ../sass/_contact.scss */
+footer li a:hover {
+  text-shadow: 2px 2px 5px #9e9e9e;
+}
+/* line 60, ../sass/_contact.scss */
+footer li .fa {
+  font-size: 30px;
+}
+/* line 64, ../sass/_contact.scss */
+footer .about:hover {
+  color: #3b5998;
+}
+/* line 67, ../sass/_contact.scss */
+footer .product:hover {
+  color: #0b96b5;
+}
+/* line 70, ../sass/_contact.scss */
+footer .contact:hover {
+  color: #fff500;
+}
+/* line 73, ../sass/_contact.scss */
+footer p {
+  margin: 0;
+}
+/* line 76, ../sass/_contact.scss */
+footer .fa {
+  color: #323333;
+  transition: 0.8s;
+  transition-duration: 3.3s;
+}
+/* line 81, ../sass/_contact.scss */
+footer .fa-facebook:hover {
+  color: #3b5998;
+  transform: rotateY(360deg);
+  transition: 0.5s;
+  transition-duration: 3s;
+}
+/* line 87, ../sass/_contact.scss */
+footer .fa-twitter:hover {
+  color: #0b96b5;
+  transform: rotateY(360deg);
+  transition: 0.5s;
+  transition-duration: 3s;
+}
+/* line 93, ../sass/_contact.scss */
+footer .fa-instagram:hover {
+  color: #fff500;
+  transform: rotateY(360deg);
+  transition: 0.5s;
+  transition-duration: 3s;
+}
+
+/* line 100, ../sass/_contact.scss */
 #Tcheny {
   font-family: "Droid Serif", serif;
   color: #323333;
 }
-/* line 49, ../sass/_contact.scss */
+/* line 103, ../sass/_contact.scss */
 #Tcheny .titlecontact {
   font-family: "selima";
   color: #323333;
 }
-/* line 52, ../sass/_contact.scss */
+/* line 106, ../sass/_contact.scss */
 #Tcheny .contact {
   padding: 20px 0px 60px 0px;
 }
-/* line 55, ../sass/_contact.scss */
+/* line 109, ../sass/_contact.scss */
 #Tcheny .form-group {
   margin-bottom: 11px;
   text-align: left;
   outline: hidden;
 }
-/* line 60, ../sass/_contact.scss */
+/* line 114, ../sass/_contact.scss */
 #Tcheny .btn-custom {
   margin-bottom: 20px;
   background-color: #43D8E5;
@@ -76,11 +127,11 @@
   transition: 0.5s;
   transition-duration: 2s;
 }
-/* line 67, ../sass/_contact.scss */
+/* line 121, ../sass/_contact.scss */
 #Tcheny .btn-custom:hover {
   background-color: #11757e;
 }
-/* line 71, ../sass/_contact.scss */
+/* line 125, ../sass/_contact.scss */
 #Tcheny .first-name-error,
 #Tcheny .last-name-error,
 #Tcheny .email-error,
@@ -88,76 +139,9 @@
   color: #C52222;
   font-weight: 600;
 }
-/* line 78, ../sass/_contact.scss */
+/* line 132, ../sass/_contact.scss */
 #Tcheny span {
   color: #C52222;
-}
-/* line 81, ../sass/_contact.scss */
-#Tcheny footer {
-  width: auto;
-  height: 150px;
-  background-color: #EAEAEA;
-}
-/* line 85, ../sass/_contact.scss */
-#Tcheny footer li {
-  display: inline;
-  padding-right: 30px;
-}
-/* line 88, ../sass/_contact.scss */
-#Tcheny footer li a {
-  text-decoration: none;
-  color: #323333;
-}
-/* line 91, ../sass/_contact.scss */
-#Tcheny footer li a:hover {
-  text-shadow: 2px 2px 5px #9e9e9e;
-}
-/* line 95, ../sass/_contact.scss */
-#Tcheny footer li .fa {
-  font-size: 30px;
-}
-/* line 99, ../sass/_contact.scss */
-#Tcheny footer .about:hover {
-  color: #3b5998;
-}
-/* line 102, ../sass/_contact.scss */
-#Tcheny footer .product:hover {
-  color: #0b96b5;
-}
-/* line 105, ../sass/_contact.scss */
-#Tcheny footer .contact:hover {
-  color: #fff500;
-}
-/* line 108, ../sass/_contact.scss */
-#Tcheny footer p {
-  margin: 0;
-}
-/* line 111, ../sass/_contact.scss */
-#Tcheny footer .fa {
-  color: #323333;
-  transition: 0.8s;
-  transition-duration: 3.3s;
-}
-/* line 116, ../sass/_contact.scss */
-#Tcheny footer .fa-facebook:hover {
-  color: #3b5998;
-  transform: rotateY(360deg);
-  transition: 0.5s;
-  transition-duration: 3s;
-}
-/* line 122, ../sass/_contact.scss */
-#Tcheny footer .fa-twitter:hover {
-  color: #0b96b5;
-  transform: rotateY(360deg);
-  transition: 0.5s;
-  transition-duration: 3s;
-}
-/* line 128, ../sass/_contact.scss */
-#Tcheny footer .fa-instagram:hover {
-  color: #fff500;
-  transform: rotateY(360deg);
-  transition: 0.5s;
-  transition-duration: 3s;
 }
 
 @media (max-width: 991px) {
@@ -244,6 +228,23 @@
     font-size: 17px;
   }
 }
+/* line 5, ../sass/_presentation.scss */
+.round {
+  border-radius: 50%;
+}
+
+/* line 10, ../sass/_presentation.scss */
+#presentation {
+  font-family: 'Muli';
+}
+
+/* line 13, ../sass/_presentation.scss */
+.question {
+  font-family: 'Muli';
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
 @font-face {
   font-family: "selima";
   src: url(../fonts/selima/selima_.otf);
