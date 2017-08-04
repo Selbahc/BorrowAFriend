@@ -5,5 +5,11 @@ $(document).ready(function() {
   });
   $(".product-card.back").click(function() {
     $(this).slideToggle('quick');
-  })
+  });
+
+  $("#productAccordion").accordion({
+    event: "mouseover",
+    collapsible: true,
+    active: false
+  });
 });

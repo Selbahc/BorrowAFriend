@@ -19,7 +19,7 @@ $logo-blue : #00DEE8;
   padding: 0 !important;
   position: relative;
   .back{
-    @include logo-blue-rgba(0.8);
+    background-color: rgba(255,255,255,0.9);
     height: 30vh;
     overflow: scroll;
     position: absolute;
@@ -28,8 +28,17 @@ $logo-blue : #00DEE8;
     display: none;
     p{
       font-size: .9em;
+      height: 30vh;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
       text-align: justify;
       margin-top: 10px;
+      font-family: $Muli;
+      font-style: italic;
     }
   }
 }
@@ -83,13 +92,15 @@ $logo-blue : #00DEE8;
   @include product-card-bg("cultives", 0.5);
 }
 
+
+//Prodcut prices
 .product-price{
-  font-family: "Muli", sans-serif;
+  font-family: $Muli;
 
   h1{
     font-size: 1.2em;
-    font-family: "Droid Serif", serif;
-    text-transform: uppercase;
+    font-family: $Droid;
+    text-transform: uppercase
   }
   .product-price-detail{
     margin-top: 1em;
@@ -106,21 +117,24 @@ $logo-blue : #00DEE8;
   h3{
     font-size: 1.1em;
   }
+  .product-price-amount{
+    font-size: .8em;
+  }
 }
 
+//DESKTOPS
 @media (min-width: 992px){
   .product-card-flip{
     span{
       font-size: 1.8em;
     }
     h1{
-      font-size: 5em;
+      font-size: 4vw;
     }
     .back{
       p{
-        font-size: 1.1em;
-        text-align: justify;
-        // margin: 15px 5px 0 5px;
+        font-size: 1.3em;
+        overflow: hidden;
       }
     }
     &:hover{
@@ -132,12 +146,7 @@ $logo-blue : #00DEE8;
     -webkit-transition: .2s;
     transition: .2s;
   }
-  .product-price-detail{
-    height: 25vh;
-    border-left: 1px solid $logo-blue;
-    border-top: none !important;
-    border-bottom: none !important;
-  }
+
   .product-party{
     &:hover{
       @include product-card-bg("fetard", 0.2);
@@ -201,5 +210,12 @@ $logo-blue : #00DEE8;
         background-color: rgba(0,0,0,0.5);
       }
     }
+  }
+  .product-price-detail{
+
+    max-height: 40vh;
+    border-left: 1px solid $logo-blue;
+    border-top: none !important;
+    border-bottom: none !important;
   }
 }
