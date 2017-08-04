@@ -1,0 +1,194 @@
+//mixins
+@mixin wh($width, $height) {
+  width: $width;
+  height: $height;
+}
+@mixin fonts($font, $color) {
+  font-family: $font;
+  color: $color;
+}
+
+//variables
+$Selima : "selima";
+$Droid: "Droid Serif", serif;
+$Muli: "Muli", sans-serif;
+$blue : #43D8E5;
+$white: #fff;
+$black: #323333;
+$red: #C52222;
+$grey: #EAEAEA;
+
+
+.navbar {
+  padding: 20px 0;
+  text-transform: uppercase;
+  img {
+    margin-left: 50px;
+    @include wh(70px, 70px);
+  }
+  li a{
+    margin-top: 10px;
+    margin-right: 20px;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    @include fonts($Muli, $blue);
+  &:hover {
+    border-top: 1px solid $black;
+    border-bottom: 1px solid $black;
+    transition: 0.5s;
+    transition-duration: 3s;
+  }
+  }
+  .black {
+    color: $black;
+  }
+}
+#Tcheny {
+  @include fonts($Droid, $black);
+  //  15px,
+  .titlecontact {
+    @include fonts($Selima, $black);
+  }
+  .contact {
+    padding: 20px 0px 60px 0px;
+  }
+  .form-group {
+    margin-bottom: 11px;
+    text-align: left;
+    outline: hidden;
+  }
+  .btn-custom {
+    margin-bottom: 20px;
+    background-color: $blue;
+    color: $white;
+    transition: 0.5s;
+    transition-duration: 2s;
+
+    &:hover {
+      background-color: darken($blue,30%);
+    }
+  }
+.first-name-error,
+.last-name-error,
+.email-error,
+.message-error {
+  color: $red;
+  font-weight: 600;
+}
+  span {
+    color: $red;
+  }
+  footer {
+    @include wh(auto, 150px);
+    background-color: $grey;
+
+    li {
+      display: inline;
+      padding-right: 30px;
+      a {
+        text-decoration: none;
+        color: $black;
+        &:hover {
+          text-shadow: 2px 2px 5px darken($grey,30%);
+        }
+      }
+      .fa {
+        font-size: 30px;
+      }
+    }
+    .about:hover {
+      color: #3b5998;
+    }
+    .product:hover {
+      color: #0b96b5;
+    }
+    .contact:hover {
+      color: #fff500;
+    }
+    p {
+      margin: 0;
+    }
+    .fa {
+      color: $black;
+      transition: 0.8s;
+      transition-duration: 3.3s;
+    }
+    .fa-facebook:hover {
+      color: #3b5998;
+      transform: rotateY(360deg);
+      transition: 0.5s;
+      transition-duration: 3s;
+    }
+    .fa-twitter:hover {
+      color: #0b96b5;
+      transform: rotateY(360deg);
+      transition: 0.5s;
+      transition-duration: 3s;
+    }
+    .fa-instagram:hover {
+      color: #fff500;
+      transform: rotateY(360deg);
+      transition: 0.5s;
+      transition-duration: 3s;
+    }
+  }
+}
+
+@media (max-width: 991px) { //petit ecran
+  .navbar {
+    text-align: center !important;
+    img {
+      @include wh(50px, 50px);
+    }
+    li a {
+      font-size: 10px;
+    }
+  }
+  #Tcheny {
+    font-size: 12px;
+  }
+    .btn-custom {
+      @include wh(120px, 30px);
+      font-size: 5px;
+    }
+  .titlecontact {
+    padding-bottom: 10px;
+    font-size: 30px;
+  }
+  .separateur {
+    @include wh(50px,0);
+    border: 1px solid $blue;
+
+  }
+  footer {
+    padding: 30px 0;
+    a {
+      font-size: 12px;
+    }
+  }
+
+}
+@media (min-width: 992px) { // grand ecran
+  #Tcheny {
+    font-size: 16px;
+  }
+  .btn-custom {
+    @include wh(150px, 50px);
+    font-size: 20px !important;
+  }
+  .titlecontact {
+    padding-bottom: 20px;
+    font-size: 50px;
+  }
+  .separateur {
+    @include wh(90px,0);
+    border: 2px solid $blue;
+  }
+  footer {
+    padding: 60px 0;
+    a {
+      font-size: 17px;
+    }
+  }
+
+}
