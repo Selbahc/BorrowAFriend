@@ -20,8 +20,10 @@ $(document).ready(function() {
 
         if (message === ""){
             $('.message-error').html('Veuillez entrer votre message')
-        } else if (message.length < 15) {
-            $('.message-error').html('Veuillez entrer au moins 15 characters')
         };
+        
+        if (firstName && lastName && email && message){
+          $('.messageSubmit').html('Votre message à bien été envoyé !')
+        }
     });
     });
