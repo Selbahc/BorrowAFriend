@@ -1,0 +1,110 @@
+
+//MIXINS
+@mixin product-card-bg($img){
+background: url("../medias/images/product-page/"+$img+".jpeg");
+background-size: cover;
+}
+@mixin logo-blue-rgba($opacity) {
+  background-color: rgba(0, 222, 232, $opacity);
+
+}
+//VARIABLES
+$white : #FFF;
+$logo-blue : #00DEE8;
+
+
+////PRODUCT
+//Prodcut cards
+.product-card-flip{
+  padding: 0 !important;
+  position: relative;
+  .back{
+    @include logo-blue-rgba(0.6);
+    height: 30vh;
+    overflow: scroll;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    p{
+      font-size: 1.1em;
+      // text-align: justify;
+      margin: 5px 5px 0 10px;
+    }
+  }
+}
+.product-card{
+  height: 30vh;
+  padding: 0 10px !important;
+  font-size: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  span{
+    color: $logo-blue;
+  }
+  h1{
+    color: $white;
+    font-family: "selima", sans-serif;
+    font-size: 2.8em;
+  }
+}
+
+.product-party{
+  @include product-card-bg("fetard");
+}
+.product-geek{
+  @include product-card-bg("geek");
+}
+.product-walk{
+  @include product-card-bg("flaneur");
+}
+.product-sport{
+  @include product-card-bg("sportif");
+}
+.product-sad{
+  @include product-card-bg("confident");
+}
+.product-restaurant{
+  @include product-card-bg("glouton");
+}
+.product-clown{
+  @include product-card-bg("comique");
+}
+.product-culture{
+  @include product-card-bg("cultives");
+}
+
+.product-price{
+  font-family: "Muli", sans-serif;
+  background-color: #FFF;
+
+  h1{
+    font-size: 1.2em;
+    font-family: "Droid Serif", serif;
+    text-transform: uppercase;
+  }
+  .product-price-detail{
+    // border-radius: .5em;
+    margin: 1em 0;
+    border-top: 1px solid $logo-blue;
+    border-bottom: 1px solid $logo-blue;
+    // @include logo-blue-rgba(0.2);
+
+  }
+  h2{
+    color: $logo-blue;
+    font-family: "selima";
+    font-size: 2em;
+  }
+  h3{
+    font-size: 1.1em;
+  }
+}
