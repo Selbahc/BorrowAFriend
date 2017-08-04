@@ -39,7 +39,6 @@ $blueBorrow: #79C4CF;
   margin: 0;
 
   & p {
-    font-size: 14px;
     text-transform: uppercase;
     text-align: center;
     color: #fff;
@@ -150,10 +149,79 @@ $blueBorrow: #79C4CF;
   }
 }
 
-@media (min-width: 600px) {
+
+@media (max-width: 991px) {
+  #three-boxes {
+    p {
+      font-size: 14px;
+    }
+  }
+}
+@media (min-width: 992px) {
+  #three-boxes {
+    p {
+      font-size: 18px;
+    }
+  }
   #contact-box,
   #presentation-box,
   #produits-box {
     min-height: 20em;
+  }
+}
+
+// Footer
+footer {
+  @include wh(auto, 150px);
+  background-color: $grey;
+
+  li {
+    display: inline;
+    padding-right: 30px;
+    a {
+      text-decoration: none;
+      color: $black;
+      &:hover {
+        text-shadow: 2px 2px 5px darken($grey,30%);
+      }
+    }
+    .fa {
+      font-size: 30px;
+    }
+  }
+  .about:hover {
+    color: #3b5998;
+  }
+  .product:hover {
+    color: #0b96b5;
+  }
+  .contact:hover {
+    color: #fff500;
+  }
+  p {
+    margin: 0;
+  }
+  .fa {
+    color: $black;
+    transition: 0.8s;
+    transition-duration: 3.3s;
+  }
+  .fa-facebook:hover {
+    color: #3b5998;
+    transform: rotateY(360deg);
+    transition: 0.5s;
+    transition-duration: 3s;
+  }
+  .fa-twitter:hover {
+    color: #0b96b5;
+    transform: rotateY(360deg);
+    transition: 0.5s;
+    transition-duration: 3s;
+  }
+  .fa-instagram:hover {
+    color: #fff500;
+    transform: rotateY(360deg);
+    transition: 0.5s;
+    transition-duration: 3s;
   }
 }

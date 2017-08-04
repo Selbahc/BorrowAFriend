@@ -12,7 +12,7 @@
 </head>
 <body>
 
-  <!-- Contact -->
+  <!-- CONTACT -->
   <div id="Tcheny"><!-- id Tcheny -->
 
     <!-- NAVBAR -->
@@ -31,7 +31,7 @@
             <li><a href="#">Home</a></li>
             <li><a href="#">A Propos</a></li>
             <li><a href="#">Produits</a></li>
-            <li><a href="#">Contact</a></li>
+            <li class="active"><a href="#">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -47,42 +47,36 @@
         </div>
       </div>
 
-<hr class="separateur">
+      <hr class="separateur">
       <!-- FORMULAIRE -->
       <div class="container contact">
-        <div class="formulaire col-md-5 col-sm-12">
-          <div class="formline row">
-            <div class="form ">
+        <div class="text-center col-md-5 col-sm-12">
+          <form role="form ">
+            <div class="form-group">
               <label for="first">Nom : </label> <span>*</span>
-              <input type="text" id="first" class="form-control input-lg">
+              <p class="first-name-error"></p>
+              <input type="text" class="form-control" id="first">
             </div>
-          </div>
-
-          <div class="formline row">
-            <div class="form ">
+            <div class="form-group">
               <label for="last">Prénom : </label> <span>*</span>
-              <input type="text" id="last" class="form-control input-lg">
+              <p class="last-name-error"></p>
+              <input type="text" class="form-control" id="last">
             </div>
-          </div>
-
-          <div class="formline row">
-            <div class="form ">
+            <div class="form-group">
               <label for="email">E-mail : </label> <span>*</span>
-              <input type="text" id="email" class="form-control input-lg">
+              <p class="email-error"></p>
+              <input type="email" class="form-control" id="email">
             </div>
-          </div>
-
-          <div class="formline row">
-            <div class="form ">
+            <div class="form-group">
               <label for="message">
-                Laissez nous un message ?
+                Laissez nous un message
               </label> <span>*</span>
+              <p class="message-error"></p>
               <textarea id="message" class="form-control" rows="3"></textarea>
             </div>
-          </div>
-
-          <!-- BUTTON -->
-          <button type="submit" class="btn btn-custom btn-lg">Get in touch !</button>
+            <!-- BOUTTON -->
+            <button type="submit" class="btn btn-custom">Get in touch !</button>
+          </form>
         </div>
 
         <!-- MAPS -->
@@ -121,9 +115,10 @@
 
     </div><!-- id Tcheny -->
 
-    <script src="./javascripts/contact.js" type="text/javascript"></script>
-    <script src="./javascripts/jquery-ui/jquery-ui.min.js"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./javascripts/bootstrap.min.js" type="text/javascript"></script>
+    <script src="./javascripts/contact.js" type="text/javascript"></script>
+    <script src="./javascripts/jquery-ui/jquery-ui.min.js"></script>
   </body>
   </html>
