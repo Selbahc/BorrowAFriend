@@ -29,6 +29,8 @@ $grey: #EAEAEA;
   li a{
     margin-top: 10px;
     margin-right: 20px;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
     @include fonts($Muli, $blue);
   &:hover {
     border-top: 1px solid $black;
